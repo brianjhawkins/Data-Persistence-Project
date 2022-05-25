@@ -11,11 +11,15 @@ using UnityEditor;
 public class MenuUIManager : MonoBehaviour
 {
     public TMP_InputField nameField;
+    public TMP_Text highScoreText;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (DataManager.Instance != null && !string.IsNullOrEmpty(DataManager.Instance.HighScoreName))
+        {
+            highScoreText.text = "High Score : " + DataManager.Instance.HighScoreName + " : " + DataManager.Instance.HighScore;
+        }
     }
 
     

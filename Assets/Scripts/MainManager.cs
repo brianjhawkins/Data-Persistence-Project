@@ -40,7 +40,7 @@ public class MainManager : MonoBehaviour
 
         if (!string.IsNullOrEmpty(DataManager.Instance.HighScoreName))
         {
-            HighScoreText.text = "Best Score: " + DataManager.Instance.HighScoreName + ": " + DataManager.Instance.HighScore;
+            HighScoreText.text = "High Score : " + DataManager.Instance.HighScoreName + " : " + DataManager.Instance.HighScore;
         }
     }
 
